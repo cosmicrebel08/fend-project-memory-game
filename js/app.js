@@ -1,6 +1,4 @@
-/*
- * Create a list that holds all of your cards
- */
+//contains the list of cards
  let cardList= ["diamond", "paper-plane", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb", "diamond", "paper-plane", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb"];
 
 
@@ -28,6 +26,35 @@ function shuffle(array) {
     return array;
 }
 
+//click on a cards
+
+function selectCards(){
+
+}
+
+//compare cards
+
+function matchCards(){
+
+}
+
+//the game ends and you win!!
+
+function gameOver(){
+
+}
+
+//reset the game
+
+function reset(){
+
+}
+
+//counts the number of moves
+
+function moves(){
+
+}
 
 
 
