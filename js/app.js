@@ -26,16 +26,39 @@ function shuffle(array) {
     return array;
 }
 
-//click on a cards
 
-function selectCards(){
+//stores the card clicked
+let clickedCards = [];
+let matches = [];
 
-}
+const deck = document.querySelector('.deck');
+
+deck.addEventListener('click', flipF);
+//flips the card
+function flipF(event){
+
+const flip = event.target;
+
+if(flip.classList.contains('card') && clickedCards.length < 2){
+  flip.classList.toggle('open');
+  flip.classList.toggle('show');
+  clickedCards.push(flip);
+  if(clickedCards.length === 2){
+    matchCards();
+  }
+
+}}
+
 
 //compare cards
 
 function matchCards(){
-
+  if(clickedCards[0].firstElementChild.className === clickedCards[1].firstElementChild.className){
+    console.log('match');
+  }
+  else{
+    console.log('Not a match');
+  }
 }
 
 //the game ends and you win!!
