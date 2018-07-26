@@ -1,5 +1,5 @@
 //contains the list of cards
-
+// A majority of the framework for this code came from https://matthewcranford.com/memory-game-walkthrough website
 let cardList= ["diamond", "paper-plane", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb", "diamond", "paper-plane", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb"];
 let clickedCards = [];
 let matches = [];
@@ -49,7 +49,6 @@ function shuffle(array) {
 
 
 //stores the card clicked
-
 deck.addEventListener('click', flipF);
 //flips the card
 function flipF(event){
