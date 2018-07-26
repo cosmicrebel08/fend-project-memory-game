@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+
 }
 
 *,
@@ -33,6 +34,72 @@ h1 {
     font-weight: 300;
 }
 
+.background{
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:rgba(255,255,255,0.5);
+}
+
+.modal{
+  top: 50%;
+  left:45%;
+  margin-left: -200px;
+  margin-top: -175px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-family:monospace;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 16px;
+  text-align: left;
+  background-color: black;
+  width: 495px;
+  margin-bottom: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.modalHeader{
+
+justify-content: space-between;
+align-items: left;
+padding-left: 2.5rem;
+color: white;
+}
+
+.modalTitle{
+  display: inline-block;
+}
+
+
+
+.close{
+  position:absolute;
+  margin-left: 250px;
+  align-items:right;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+
+
+}
+
+.gamestats{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  align-items: center;
+
+
+}
+
+.hide{
+  display: none;
+}
 /*
  * Styles for the deck of cards
  */
